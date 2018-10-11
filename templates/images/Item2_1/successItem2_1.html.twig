@@ -1,0 +1,6 @@
+{% extends "success.html.twig" %}
+
+{% block pathSuccess %}{{ path('item2_1') }}{% endblock pathSuccess %}
+{% block eraseItem %}
+    {{ path('EraseItem2_1', {'basename': thumb.basename,'id': thumb.getId ,'images_id': thumb.getImagesId } ) }}
+{% endblock %}

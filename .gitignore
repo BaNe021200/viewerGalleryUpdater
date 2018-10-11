@@ -1,0 +1,39 @@
+
+###> symfony/framework-bundle ###
+/.env
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+/public/img/coverItem2_2.jpg
+/public/img/item1/
+/public/img/coverItem1_1.jpg
+/public/img/coverItem1_3.jpg
+/public/img/item2_1/
+/public/img/coverItem2_1_2.jpg
+/public/img/item2_2/
+/public/img/coverItem1_2.jpg
+/public/img/coverItem2_1_3.jpg
+/public/img/coverItem2_1_1.jpg
+/config/packages/doctrine.yaml
+/config/packages/framework.yaml
+/config/packages/twig.yaml
+/config/packages/translation.yaml
+/config/packages/doctrine_migrations.yaml
+/config/packages/paginator.yaml
+/config/packages/routing.yaml
+/config/services.yaml
+/config/bundles.php
+/public/img/desktop.ini
+/bin/console
+/.idea/
+/config/packages/prod/
+/config/packages/test/
+/config/packages/dev/
+/config/routes/annotations.yaml
+/public/theme/
+/public/saveItem1ThumbsCentered/

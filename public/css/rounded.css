@@ -1,0 +1,18 @@
+.thumbs{
+    border-radius: 50%;
+}
+
+.disabledCross{
+     display: none !important;
+ }
+
+
+.visibleCross{
+    display: flex !important;
+
+}
+
+.fa-minus-circle
+{
+    color:rgba(219,112,147,0.5);
+}

@@ -1,0 +1,83 @@
+/**exemple MDN**/
+/*.exemple {
+    background: linear-gradient(to bottom right, yellow, green);
+    box-shadow: 8px 8px 10px 0px deeppink, -5px -5px 5px 0px blue, 5px 5px 15px 0px yellow;
+    padding: 0em 1em;
+    border-radius: 16px;
+    border-style: solid;
+    margin-left: 10px;
+    font: 24px sans-serif;
+    line-height: 2;
+
+    -webkit-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+}*/
+
+/*mes essais de clonage*/
+
+
+.rounded{
+    border-radius: 50%;
+}
+
+article{
+    position: relative;
+    width: 200px;
+    height: 200px;
+   /* background-color: #191919;*/
+    background-color: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+article div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 33%;
+    overflow: hidden;
+}
+article.fold div.top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 44%;
+    overflow: hidden;
+}
+
+article.fold div.bot img{
+    margin-top: -50%;
+}
+
+article .bot {
+    bottom: 0;
+    top: 50%;
+    transform-origin: 50% 0;
+    transform: perspective(800px) rotateX(0deg);
+    transition: all 0.5s cubic-bezier(0.075, 0.45, 0.165, 1);
+}
+
+article:hover .bot {
+    transform: perspective(800px) rotateX(65deg);
+}
+
+article h2 {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    font-size: 1.3rem;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+article h2 a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+}
+
+

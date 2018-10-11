@@ -1,0 +1,145 @@
+.thumbs{
+    margin-right: -12rem !important;
+}
+
+.rowThumbs{
+    flex-wrap: nowrap !important;
+    overflow: auto;
+}
+
+
+@media all and (min-width: 280px) and (max-width: 299px)
+{
+    .rowThumbs{
+        flex-wrap: wrap!important;
+        overflow: hidden;
+    }
+
+}
+
+@media all and (min-width:300px) and (max-width: 360px)
+{
+    .rowThumbs{
+        flex-wrap: wrap!important;
+        overflow: hidden;
+    }
+    .thumbs{
+        margin-right: -15rem !important;
+
+    }
+}
+@media all and (min-width:360px) and (max-width: 418px)
+{
+    .rowThumbs{
+        flex-wrap: wrap!important;
+        overflow: hidden;
+    }
+    .thumbs{
+        margin-right: -16rem !important;
+
+    }
+}
+
+@media all and (min-width:418px) and (max-width: 482px)
+{
+    .rowThumbs{
+        flex-wrap: wrap!important;
+        overflow: hidden;
+    }
+    .thumbs{
+        margin-right: -20rem !important;
+
+    }
+}@media all and (min-width:482px) and (max-width: 576px)
+{
+    .rowThumbs{
+        flex-wrap: wrap!important;
+        overflow: hidden;
+    }
+    .thumbs{
+        margin-right: -23rem !important;
+
+    }
+}
+
+@media all and (min-width: 576px) and (max-width: 768px)
+{.thumbs{
+    margin-right: -12rem !important;
+}
+
+    .rowThumbs{
+        flex-wrap: nowrap !important;
+        overflow: auto;
+    }
+}
+
+
+
+@media all and (min-width :768px) and (max-width :900px)
+{
+
+    .thumbs{
+        margin-right: -6rem !important;
+    }
+
+    .rowThumbs{
+        flex-wrap: nowrap !important;
+        overflow: auto;
+    }
+
+
+
+}
+
+
+
+@media all and (min-width: 900px) and (max-width :992px)
+{.thumbs{
+    margin-right: -6rem !important;
+}
+
+    .rowThumbs{
+        flex-wrap: nowrap !important;
+        overflow: auto;
+    }
+
+}
+
+
+
+@media all and (min-width: 992px) and (max-width :1024px)
+{.thumbs{
+    margin-right: -9rem !important;
+}
+
+    .rowThumbs{
+        flex-wrap: nowrap !important;
+        overflow: auto;
+    }
+}
+
+
+
+@media all and (min-width: 1024px) and (max-width :1200px)
+{.thumbs{
+    margin-right: -9rem !important;
+}
+
+    .rowThumbs{
+        flex-wrap: nowrap !important;
+        overflow: auto;
+    }
+}
+
+
+@media all and (min-width: 1200px) and (max-width :1280px)
+{.thumbs{
+    margin-right: -12rem !important;
+}
+
+    .rowThumbs{
+        flex-wrap: nowrap !important;
+        overflow: auto;
+    }
+}
+

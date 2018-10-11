@@ -1,0 +1,29 @@
+{% extends "images/Item1/Item1.html.twig" %}
+
+{% block updateButtonLink %}{{ path('UpdateItem2_1') }}{% endblock %}
+{% block title %}Item 2.1{% endblock title %}
+
+
+{% block item0001Active %}{% endblock %}
+
+{% block item0002Active %}active{% endblock %}
+
+
+
+
+{% block secondarytxt %}Item 2.1{% endblock secondarytxt %}
+{% block pathEraseAll %}{{ path('EraseItem2_1All') }}{% endblock %}
+
+{% block item %}item2_1{% endblock item %}
+
+{% block src %}src="../img/coverItem2_1_{{ bg_ramdom3 }}.jpg"{% endblock src %}
+
+
+
+
+{% block levelLinkThumbs %}../{% endblock levelLinkThumbs %}
+{% block levelLink%}../{% endblock levelLink %}
+{% block levelLinkThumbs2 %}../{% endblock levelLinkThumbs2 %}
+{% block eraseItem %}
+    {{ path('EraseItem2_1', {'basename': thumb.basename,'id': thumb.getId ,'images_id': thumb.getImagesId } ) }}
+{% endblock %}

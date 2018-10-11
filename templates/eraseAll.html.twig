@@ -1,0 +1,66 @@
+{% extends "base.html.twig" %}
+
+{% block main %}
+
+
+    <div class="modal fade" id="myModalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+
+
+
+
+
+                    <h5 class="modal-title" id="exampleModalLabel">Danger suppression ! </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+
+
+
+
+
+                    <p>Vous êtes sur point de supprimer toutes les  photos du thème {{theme}}    ...continuer ?</p>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="dismissModal" class="btn btn-primary" data-dismiss="modal">Annuler</button>
+
+
+
+                    {% block  destroyItem %}<a href=""><button type="button" class="btn btn-danger">Supprimer</button></a>{% endblock destroyItem %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock main %}
+
+{% block test %}
+
+{% endblock test %}
+
+
+
+
+
+
+{% block javaScript %}
+    {{ parent() }}
+
+    <script>  $('#myModalDelete').modal('show');</script>
+
+    <script> document.getElementById('dismissModal').addEventListener('click',function () {
+            window.location.href="{% block pathSuccess %}{% endblock pathSuccess %}"
+        });
+    </script>
+
+{% endblock javaScript %}

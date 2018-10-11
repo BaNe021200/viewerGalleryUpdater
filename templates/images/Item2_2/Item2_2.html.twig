@@ -1,0 +1,22 @@
+{% extends "images/Item2_1/Item2_1.html.twig" %}
+
+
+{% block title %}item2.2{% endblock %}
+
+{% block updateButtonLink %}{{ path('UpdateItem2_2') }}{% endblock updateButtonLink %}
+
+
+{% block secondarytxt %}Item 2.2{% endblock secondarytxt %}
+{% block pathEraseAll %}{{ path('EraseItem2_2All') }}{% endblock %}
+
+
+{% block item %}item2_2{% endblock item %}
+
+
+{% block src %}<img src="{{ asset('img/coverItem2_2.jpg') }}" alt="illustration neurone from pixabay"{% endblock src %}
+
+
+
+{% block eraseItem %}
+    {{ path('EraseItem2_2', {'basename': thumb.basename,'id': thumb.getId ,'images_id': thumb.getImagesId } ) }}
+{% endblock %}

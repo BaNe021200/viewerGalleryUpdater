@@ -1,0 +1,88 @@
+{% extends "base.html.twig" %}
+{% block title %}Item 1{% endblock %}
+
+{% block stylesheet %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('zoombox/zoombox.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/rounded.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/clone2.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+{% endblock stylesheet %}
+
+{% block updateButtonLink %}{{ path('UpdateItem1') }}{% endblock updateButtonLink %}
+
+
+
+
+{% block test %}
+
+{% endblock test %}
+
+
+
+{% block secondarytxt %}Item 1{% endblock secondarytxt %}
+{% block pathEraseAll %}{{ path('EraseItem1All') }}{% endblock pathEraseAll %}
+
+
+{% block item0001Active %}active{% endblock item0001Active %}
+
+
+{% block src %}src="../img/coverItem1_{{ bg_ramdom3 }}.jpg"{% endblock src %}
+
+
+{% block thumbnails %}
+
+    {% for thumb in thumbs %}
+
+        <article class="fold ">
+            <div id="divThumb" class="top">
+                <img id="thumb" class="img-fluid img-thumbnail thumbs "
+                     src="{% block levelLinkThumbs %}{% endblock levelLinkThumbs %}{{ thumb.dirname }}{{ thumb.basename }}"
+                     title="{{ thumb.basename }} " alt=""></div>
+
+            <h2>
+                <a href="{% block levelLink %}{% endblock levelLink %}img/{% block item %}{{ path('item1') }}{% endblock item %}/{{ thumb.basename }}"
+                   rel="zoombox[{% block zoomboxVille %}item{% endblock zoomboxVille %}]"><i class="far fa-eye"
+                                                                                                  style="color: #1E90FF; margin-right: 12px; "></i>
+
+                </a>
+
+
+
+
+
+
+                <a href="{% block eraseItem %}{{ path('EraseItem1', {'basename': thumb.getBasename,'id': thumb.getId ,'images_id': thumb.getImagesId } ) }}{% endblock eraseItem %}"><i class="fas fa-trash" style="color: #F00;"></i>
+                </a>
+
+
+            </h2>
+            <div class="bot">
+                <img id="thumb" class="img-fluid img-thumbnail thumbs "
+                     src="{% block levelLinkThumbs2 %}{% endblock levelLinkThumbs2 %}{{ thumb.dirname }}{{ thumb.basename }}"
+                     title="{{ thumb.basename }} " alt="">
+            </div>
+
+        </article>
+
+{% endfor %}
+{% endblock thumbnails %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block javaScript %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('zoombox/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('zoombox/zoombox.js') }}"></script>
+
+{% endblock javaScript %}

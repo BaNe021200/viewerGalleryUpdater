@@ -1,0 +1,85 @@
+/:
+    path: /
+    controller: App\Controller\ImagesController::item1
+
+item1:
+    path: /item1
+    controller: App\Controller\ImagesController::item1
+
+item2_1:
+    path: /item2/item2_1
+    controller: App\Controller\ImagesController::item2_1
+
+item2_2:
+    path: /item2/item2_2
+    controller: App\Controller\ImagesController::item2_2
+
+UpdateItem1:
+    path: /item1/Update
+    controller: App\Controller\DownloadController::updateItem1
+
+UpdateItem2_1:
+    path: /item2/item2_1/Update
+    controller: App\Controller\DownloadController::updateItem2_1
+
+UpdateItem2_2:
+    path: /item2/item2_2/Update
+    controller: App\Controller\DownloadController::updateItem2_2
+
+
+
+EraseItem1:
+     path: /item1/Delete/{basename}/{id}/{images_id}
+     controller: App\Controller\DownloadController::eraseModalItem1
+     methods: [GET]
+
+EraseItem2_1:
+     path: /item2_1/Delete/{basename}/{id}/{images_id}
+     controller: App\Controller\DownloadController::eraseModalItem2_1
+     methods: [GET]
+
+EraseItem2_2:
+     path: /item2_2/Delete/{basename}/{id}/{images_id}
+     controller: App\Controller\DownloadController::eraseModalItem2_2
+     methods: [GET]
+
+DestroyItem1:
+      path: /Item1/Delete/destroy/{basename}/{id}/{images_id}
+      controller: App\Controller\DownloadController::destroyItem1
+
+DestroyItem2_1:
+      path: /Item2_1/Delete/destroy/{basename}/{id}/{images_id}
+      controller: App\Controller\DownloadController::destroyItem2_1
+
+DestroyItem2_2:
+      path: /Item2_2/Delete/destroy/{basename}/{id}/{images_id}
+      controller: App\Controller\DownloadController::destroyItem2_2
+
+
+EraseItem1All:
+  path: /Item1/Delete/All/EraseItem1All
+  controller: App\Controller\DownloadController::eraseModalItem1All
+  methods: [GET]
+
+EraseItem2_1All:
+  path: /Item2_1/Delete/All/EraseItem2_1All
+  controller: App\Controller\DownloadController::eraseModalItem2_1All
+  methods: [GET]
+
+EraseItem2_2All:
+  path: /Item2_2/Delete/All/EraseItem2_2All
+  controller: App\Controller\DownloadController::eraseModalItem2_2All
+  methods: [GET]
+
+
+DestroyItem1All:
+  path: /Item1/Delete/destroy/All
+  controller: App\Controller\DownloadController::destroyItem1All
+
+DestroyItem2_1All:
+  path: /Item2_1/Delete/destroy/All
+  controller: App\Controller\DownloadController::destroyItem2_1All
+
+DestroyItem2_2All:
+  path: /Item2_2/Delete/destroy/All
+  controller: App\Controller\DownloadController::destroyItem2_2All
